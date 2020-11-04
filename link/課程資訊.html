@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網站架構</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            /*等於footer高度*/
+            margin-bottom: -50px;
+            font-family: 微軟正黑體;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            padding: 2%;
+        }
+        .footer,
+        .push {
+            height: 100px;
+            background: #6FB7B7;
+            font-weight: bold;
+            font-family: 微軟正黑體;
+            color: white;
+            padding: 3px;
+            columns: 200px 3;
+        }
+        .head {
+            /*標頭1*/
+            background-color: #6FB7B7;
+            font-weight: bold;
+            font-size: 11px;
+            font-family: 微軟正黑體;
+            color: white;
+            padding: 7px;
+        }
+        .head2 {
+            /*標頭2*/
+            height: 65px;
+            background-color: rgba(255, 255, 255, 0.4);
+            /*透明度*/
+            font-weight: bold;
+            font-family: 微軟正黑體;
+            color: black;
+            padding: 3px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .head3 {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        a {
+            /*白色超連結、無底線*/
+            text-decoration: none;
+            color: white;
+        }
+        ul {
+            /* 取消ul預設的內縮及樣式 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul.drop-down-menu {
+            border: #ccc 1px solid;
+            display: inline-block;
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 13px;
+            position: relative;
+            top: 5px;
+            left: 90px;
+        }
+        ul.drop-down-menu li {
+            position: relative;
+            white-space: nowrap;
+            border-right: #ccc 1px solid;
+        }
+        ul.drop-down-menu>li:last-child {
+            border-right: none;
+        }
+        ul.drop-down-menu>li {
+            float: left;
+            /* 只有第一層是靠左對齊*/
+        }
+        ul.drop-down-menu a {
+            background-color: #D1E9E9;
+            color: #333;
+            display: block;
+            padding: 0 30px;
+            text-decoration: none;
+            line-height: 55px;
+            width: 120px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 微軟正黑體;
+        }
+        ul.drop-down-menu a:hover {
+            /* 滑鼠滑入按鈕變色*/
+            background-color: #ACD6FF;
+            color: #004B97;
+            font-size: 25px;
+            text-shadow: blue;
+            text-decoration: underline;
+        }
+        ul.drop-down-menu li:hover>a {
+            /* 滑鼠移入次選單上層按鈕保持變色*/
+            color: #004B97;
+        }
+        ul.drop-down-menu ul {
+            border: #D1E9E9 1px solid;
+            position: absolute;
+            z-index: 99;
+            left: -1px;
+            top: 100%;
+            min-width: 180px;
+        }
+        ul.drop-down-menu ul li {
+            border-bottom: #ccc 1px solid;
+        }
+
+        ul.drop-down-menu ul li:last-child {
+            border-bottom: none;
+        }
+        ul.drop-down-menu ul ul {
+            /*第三層以後的選單出現位置與第二層不同*/
+            z-index: 999;
+            top: 10px;
+            left: 90%;
+        }
+        ul.drop-down-menu ul {
+            /*隱藏次選單*/
+            display: none;
+        }
+        ul.drop-down-menu li:hover>ul {
+            /* 滑鼠滑入展開次選單*/
+            display: block;
+        }
+        .s{
+         font-size: 25px;
+         position: relative;
+         top: 5px;
+         padding: 0px 15px 1px;
+        }
+     .s1{
+         font-size: 35px;
+         position: relative;
+         top: 5px;
+         left:5px;
+       }
+       .h {
+      color: darkblue;
+      font-size: 25px;
+      padding: 25px;
+    }
+    .imgt{
+        position: absolute;
+        top:80px;
+        left:720px;
+    }
+    </style>
+</head>
+
+<body style="margin: 0%;" bgcolor="#C4E1E1">
+    <div class="head" style="text-align: right;">
+        <a href="https://www1.cycu.edu.tw/" target="_blank">中原大學</a>&ensp;|
+        <a href="https://im.cycu.edu.tw/" target="_blank">資管系系網</a>&ensp;
+    </div>
+    <div class="head2">
+        &emsp;&emsp;&emsp;&emsp;<a href="../index.html" target="_parent"><img src="../image/cylogo.png" width="180"
+                height="63"></a>
+        <ul class="drop-down-menu">
+            <li><a href="課程資訊.html" target="_parent">課程介紹</a>
+                <ul>
+                    <li><a href="選課資訊.html" target="_parent">選課資訊</a></li>
+                </ul>
+            </li>
+            <li><a href="組員介紹.html" target="_parent">關於我們</a>
+                <ul>
+                    <li><a href="組員介紹.html" target="_parent">組員介紹</a></li>
+                    <li><a href="心得感想.html">心得感想</a></li>
+                    <li><a href="其他.html">其他</a></li>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="教師介紹.html">教師介紹</a>
+            </li>
+            <li><a href="相關News.html">相關News</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="wrapper">
+        
+        <p class="s1">課程介紹</p>
+        <p class="s">課程代碼:M1225A&emsp;課程名稱:企業概論&emsp;開課教師:吳肇銘&emsp;學分數:2學分&emsp;開課系級:資管一甲&emsp;必/選修:必修</p>
+        <p align="center"><img src="../image/class2.png" width="1300" height="160"></p>
+        <div class="s1">課程規劃</div>
+        <div class="s"><ol>
+        <li>提升學生專業能力：藉由專業課程融合專案實作、服務學習結合資訊科技，讓學生從做中學、學中做，提升未來競爭力。</li><br>
+        <li>培養學生知識責任：透過團隊學習、企業實做、問題解決、提案競賽方式等，讓學生充分瞭解「知識責任」重要性。</li><br>
+        <li>  拓展本校與外界之社會關係：讓大學生學習以「社會企業」的角色接觸相關基金會、非營利組織，建立本校師生與外界資源多方面合作關係。</li><br>
+        </ol></div>
+        <div class="s1">課程目標</div>
+        <div class="s"><ol><div class="imgt"><img src="/image/b.jpg" width="600" height="600"></div>
+        <li>培養學生面對問題、解決問題、專業應用的能力</li><br>
+        <li>建立學生以專業關懷社會、協助弱勢的行為態度</li><br>
+        <li>以社會企業模式，實際規劃企業之創立與運作</li><br>
+        <li>具備服務學習與社會關懷之能力</li><br>
+        <li>瞭解企業的基本功能與運作</li><br>
+        <li>資源多方面合作關係</li>
+        </ol>
+        </div>
+        <div class="s1">課程評分方式</div>
+        <div class="s"><ol>
+        <li>創新（創意及創業能力）20%</li><br>
+        <li>關懷（具備服務學習與社會關懷之能力）20%</li><br>
+        <li>熱誠（主動挑戰自我，面對壓力、調節壓力）30%</li><br>
+        <li>溝通（有效溝通及團隊執行工作）30%</li>
+        </ol>
+        </div>
+        <div class="s1">預期學生專業成長描述</div>
+        <div class="s">
+          學生從服務場域資料收集，進行SWOT分析，規劃服務學習行銷活動、服務場域的行銷企畫書撰寫、團隊組織的溝通領導、服務活動的資源協調、進行服務學習活動的控制與服務學習行銷成果呈現等方面，都能透過服務學習而得到實作的訓練。</div>
+        <div class="h"><a href="https://sl.cycu.edu.tw/%E4%BC%81%E6%A5%AD%E6%A6%82%E8%AB%96-2/" target="_blank">點我了解更多</a></div>
+    </div>
+
+    <footer class="footer">
+        <p align="center"><a href="https://im.cycu.edu.tw/"><img src="../image/logo.gif" width="80" height="80"></a></p>
+        <p align="left"><a href="mailto:a10250168@gmail.com"><br>&emsp; e-mail給我們<br></a>
+            <a
+                href="https://www.google.com/maps/dir/24.9626624,121.2481536/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8%5C/@24.9619855,121.2409606,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff!2m2!1d121.2410215!2d24.957537">
+                <img src="../image/mapicon.png" width="18" height="18">320314桃園市中壢區中北路200號</a><br>
+            <img src="../image/phone.png" width="19" height="19">Tel:886-3265-5401</p>
+        <p align="left"><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScHrrZ2TxK4f5BP0Gny7C8z_i3wb2C0F_kLTqnhJswk12FHrQ/viewform"><br>回饋表單</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基本架構</title>
+    <title>選課資訊</title>
     <style type="text/css">
         html, body{
             height:100%;
@@ -16,7 +16,6 @@
            font-family: 微軟正黑體;
            font-size: 25px;
            font-weight: bold;
-           color:  	#004B97;
            padding: 2%;
        }
        .footer, .push{
@@ -134,6 +133,16 @@
      ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
          display: block;
      }
+     .s{
+         font-size: 20px;
+     }
+     .s1{
+         font-size: 35px;
+         position: relative;
+         top: 5px;
+         left:220px;
+         
+     }
      </style>
 </head>
 <body style="margin: 0%;"  bgcolor="#C4E1E1">
@@ -147,24 +156,28 @@
        <ul class="drop-down-menu">
         <li><a href="課程資訊.html" target="_parent">課程介紹</a>
             <ul>
-                <li><a href="#" target="_parent">選課資訊</a></li>
+                <li><a href="選課資訊.html" target="_parent">選課資訊</a></li>
             </ul>
         </li>
         <li><a href="../link/組員介紹.html"" target="_parent">關於我們</a>
             <ul>
                 <li><a href="../link/組員介紹.html" target="_parent">組員介紹</a></li>
-                <li><a href="#">心得感想</a></li>
+                <li><a href="心得感想.html">心得感想</a></li>
                 <li><a href="其他.html">其他</a></li>
                 </li>
             </ul>
         </li>
         <li><a href="教師介紹.html">教師介紹</a>
         </li>
-        <li><a href="#">相關News</a>
+        <li><a href="相關News.html">相關News</a>
         </li>
     </ul>
     </div>
-    <div class="wrapper">網頁顯示內容，可以單獨改上面css wrapper的內容，要重新上傳github請先到群組告知*記得改名字</div>
+    <div class="wrapper">
+        <div class="s1">選課相關資訊</div>
+        <p align="center"><a href="https://csys.cycu.edu.tw/student/">點我至中原大學選課系統<br><img src="../image/c.png" width="700px" height="400px"></a><br>選課方式:登入選課系統(i-touch帳密)→搜索課程→點擊加入即可</p>
+        <p align="center"><a href="https://itouch.cycu.edu.tw/active_system/CourseQuerySystem/">點我至中原大學開課大全<br><img src="../image/class.png" width="700px" height="400px"></a><br>查詢方式:透過系所、班級及課程分類進行搜索</p>
+    </div>
     <footer class="footer">
         <p align="center"><a href="https://im.cycu.edu.tw/"><img src="../image/logo.gif" width="80" height="80"></a></p>
         <p align="left"><a href="mailto:a10250168@gmail.com"><br>&emsp; e-mail給我們<br></a>
