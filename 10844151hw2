@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta >
+    </title>
+    <link rel=stylesheet type="text/css" href="hw2.css">
+        
+        
+</head>
+
+
+<body >
+    
+    <div align="center">
+        <div class="Header" >WELCOME TO MY<br>RESUME<br>
+            <table font color="FFEE99">
+                <tr>
+                    <td width="50px"></td>
+                    <td>
+                        <img  class="circle" src="hsiao.jpg" width="200px" height="300px"
+                            onmouseout="this.src='hsiao.jpg' " width="200px" height="300px"
+                            onmouseover="this.src='266047.jpg'" width="200px" height="300px"
+                            onclick="setBanner(); showFlag(); "/>
+                    </td>
+                    <td width="50px"></td>
+                    <td align="left">
+                        <ul></ul>
+                        <li>學校:中原大學資訊管理學系</li>
+                        <li>生日:2001/03/02</li>
+                        <li>星座:雙魚座<br></li>
+                        <li>血型:O</li>
+                        <li>興趣:旅遊</li>
+                    </ul>
+                    </td>
+                    <td width="50px"></td>
+                    <td align="left"><br>
+                        <a href="https://www.instagram.com/tingyun0302/?hl=zh-tw" target="blank"><img src="ig.png" width="50" height="50"></a>Instagram:tingyun0302<br>
+                        <a href="https://www.facebook.com/profile.php?id=100012354997661" target="blank"><img src="fb.png" width="50" height="50"></a>Facebook:蕭婷云<br>
+                        <a href="mailto:tingyun0302@gmail.com" target="blank"><img src="google.png" width="50" height="50"></a>Gmail:tingyun0302@gmail.com
+                    </td>
+                </tr>
+            </table>
+        </div><br>
+        <table>
+            <tr>
+                <td>
+                    <div class="Sidebar">
+                        <div class="order">
+                            <span class="line"></span>
+                            <span class="txt">專業技能</span>
+                            <span class="line"></span>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="box">
+                                            <div class="bg1"></div>
+                                            <div class="bg2"></div>
+                                            <div class="pr1"></div>
+                                            <div class="pr2"></div>
+                                            <div class="content"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box1">
+                                            <div class="bg1"></div>
+                                            <div class="bg2"></div>
+                                            <div class="pr1"></div>
+                                            <div class="pr2"></div>
+                                            <div class="content"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box2">
+                                            <div class="bg1"></div>
+                                            <div class="bg2"></div>
+                                            <div class="pr1"></div>
+                                            <div class="pr2"></div>
+                                            <div class="content"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr><td><div class="lab1">前端網頁開發</div></td>
+                                    <td><div class="lab2">網頁設計</div></td>
+                                    <td><div class="lab3">電腦繪圖</div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="box3">
+                                            <div class="bg1"></div>
+                                            <div class="bg2"></div>
+                                            <div class="pr1"></div>
+                                            <div class="pr2"></div>
+                                            <div class="content"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box4">
+                                            <div class="bg1"></div>
+                                            <div class="bg2"></div>
+                                            <div class="pr1"></div>
+                                            <div class="pr2"></div>
+                                            <div class="content"></div>
+                                        </div>
+                                    </td>
+                                    <!--<td>
+                                        <div class="box5">
+                                            <div class="bg1"></div>
+                                            <div class="bg2"></div>
+                                            <div class="pr1"></div>
+                                            <div class="pr2"></div>
+                                            <div class="content"></div>
+                                        </div>
+                                    </td>-->
+                                </tr>
+                                <tr><td><div class="lab4">麵包版</div></td>
+                                    <td><div class="lab5">剪輯</div></td>
+                                    <td><div class="lab6"></div></td>
+                                    
+                                </tr>
+                            </table>
+                              
+                        </div>
+                        <div class="order">
+                            <span class="line"></span>
+                            <span class="txt">程式技能</span>
+                            <span class="line"></span>
+                        </div>
+                        <div >
+                            <section class="lab7"><font color=" #db3a27">Java</font><br> <div class="progress"> 
+                                    
+                                    <span class="red" style="width: 20%;"><span>50%</span></span> </div> <br>
+                                    <font color=" #5aaadb">Python</font><br>
+                                    <div class="progress"> <span class="blue" style="width: 40%;"><span>70%</span></span> </div> <br>
+                                    <font color="  #6ba031">C#</font><br>
+                                    <div class="progress"> <span class="green" style="width: 30%;"><span>65%</span></span> </div> <br>
+                                    <font color="  #f0ad24">JavaScript</font><br>
+                                    <div class="progress"> <span class="orange" style="width: 15%;"><span>40%</span></span> </div> </section>
+                                    
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="centerdiv">  </div>
+                </td>
+                <td>
+                    <div class="body">
+                        <div class="order">
+                            <span class="line"></span>
+                            <span class="txt">經歷</span>
+                            <span class="line"></span><br>
+                            <table>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="life1" top="30px">
+                                            2019
+                                            <ul class="life5">
+                                                <li>亞洲大學資訊傳播學系</li>
+                                            </ul>
+            
+                                        </div><br><br><br>
+                                        <div class="life2" top="60px">
+                                            2017
+                                            <ul class="life8">
+                                                <li>中原大學資訊管理學系</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="year.png" height="900px" width="200px" >
+                                    </td>
+                                    <td>
+                                        <div class="life3" top="60px">
+                                            2020
+                                            <ul class="life6">
+                                                <li>中原大學資訊管理學系</li>
+                                            </ul>
+            
+                                        </div><br><br><br>
+                                        <div class="life4" top="60px">
+                                            2018
+                                            <ul class="life7">
+                                                <li>中原大學資訊管理學系</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--<img src="year.png" height="900px" width="200px" >-->
+                            <!--<div class="life1" top="30px">
+                                家族旅遊
+
+                            </div>-->
+                        </div>
+                        
+                        <!--<div class="year1"><img src="year.png" height="1000px" width="250px" ></div>-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div style='clear:both;'></div><br>
+        <div class="order">
+            <span class="line"></span>
+            <span class="txt">作品</span>
+            <span class="line"></span>
+            <div align="center" width="1000px">
+                <table valign="top">
+                    <tr hight="200px"></tr>
+                    <tr>
+                        <td ><img src="p1.jpg" width="300px" height="300px"></td>
+                        <td ><img src="p2.jpg" width="250px" height="250px"></td>
+                        <td ><img src="p3.jpg" width="480px" height="280px"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    
+        <div class="Footer">
+            聯絡方式:<br>
+            地址:高懸市三民區康德街XX號<br>
+            手機:0911600097<br>
+            <a href="mailto:tingyun0302@gmail.com" target="blank">Gmail:tingyun0302@gmail.com</a>
+        </div>
+        
+        
+    
+</body>
+</html>
